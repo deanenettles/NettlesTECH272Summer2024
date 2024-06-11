@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="eng-US">
+<head>
+    <!-- head element is for items that control the page but don't show up on the page -->
+</head>
+
+<body>
+    <!-- body element is what shows up on the page -->
+
+    <h1>Deane Nettles</h1>
+
+    <h2>Past</h2>
+    <p>Born in New England. <strong>Raised in   Ohio.</strong> Mostly lived in DC and Baltimore since then. Have been a graphic designer for 40 years and have done web design for the past twenty years.</p>
+
+    <h2>Present</h2>
+    <p>Teach graphic design and web design at colleges in the <em>Washington, DC</em> area. Work on graphic design projects. Bicycle a lot, draw, paint and sculpt.</p>
+
+    <h2>Future</h2>
+    <p>Look forward to traveling and <u>painting</u> and sculpting.</p>
+
+    <h2>Hobbies</h2>
+    <ul><!-- unordered lists or bullets -->
+        <li>Biking</li>
+        <li>Hiking</li>
+        <li>Painting</li>
+        <li>Sculpting</li>
+    </ul>
+
+    <h2>Favorite Fruits</h2>
+
+    <ol>
+        <li>Apples</li>
+        <li>Oranges</li>
+        <li>Pears</li>
+    </ol>
+
+</body>
+</html>
