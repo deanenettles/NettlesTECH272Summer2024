@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* BOX SIZING -- ignores border and padding when measuring width */
+        html {
+        box-sizing: border-box;
+        }
+        *, *:before, *:after {
+        box-sizing: inherit;
+        }
+
+        /* STRUCTURE */
+        
+
+        div {width:400px; outline:1px solid red;}
+        section {width:200px; background-color:lightgreen; float:left; padding:20px; border:2px solid black;}
+        .clearfix {
+             overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <section>
+            <p>section 1</p>
+        </section>
+        <section>
+            <p>section 1</p>
+        </section>
+
+    </div>
+    
+</body>
+</html>
