@@ -56,12 +56,12 @@
             #radio {margin-bottom:20px;}
             
             /* FORM BUTTONS */
-            button {width:100px; border-radius:6px;}
+            button, input[type=reset] {width:100px; border-radius:6px;}
             button {margin-top:20px; background-color:red; color:white; font-weight:bold;border:0;}
             button:hover, button:focus, button:active {background-color:aqua; color:black;}
             
-            button[type=reset] {background-color:darkkhaki; font-weight:bold; border:0;}
-            button[type=reset]:hover, input[type=reset]:focus, input[type=reset]:active {background-color:#999; color:white;}
+            input[type=reset] {background-color:darkkhaki; font-weight:bold; border:0;}
+            input[type=reset]:hover, input[type=reset]:focus, input[type=reset]:active {background-color:#999; color:white;}
             
             
         </style>
@@ -141,7 +141,7 @@
                 <label for="css">CSS</label><br>
                 <input type="radio" id="javascript" name="language" value="javascript">
                 <label for="javascript">javascript</label><br>
-                </div><!-- end RADIO -->
+                </div><!-- end RADIO -->    
                     
                 <!-- reason for email -->
                 <select name="reason">
@@ -153,8 +153,8 @@
                 <!-- COMMENT -->
                 <textarea name="comment" cols="45" rows="4" placeholder="Comments"></textarea>
                 <!-- BUTTONS -->
-                <button type="submit" value="Submit">Submit</button>
-                <button type="reset" value="Reset">Reset</button>
+                <button type="send" value="Send">Send</button>
+                <input type="reset" value="Reset">         
             </form>
         </section>
     </div> <!-- close WRAP -->
