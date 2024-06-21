@@ -27,6 +27,25 @@
             figure {margin:0;}
             img {width:100%; max-width:300px; margin-bottom:10px;}
 
+            		/* FLOATS */
+
+		/* CLEARFIX HACK (https://www.w3schools.com/howto/howto_css_clearfix.asp): Apply the following class to any container containing a floated item so the container recognizes the floated item. Here we apply this class to the  */
+   	     	.clearfix::after {
+   		     content: "";
+   		     clear: both;
+   		     display: table;
+   		   }
+		.fr300 {width:100%; max-width:300px; float:right; margin-left:20px; 
+			margin-bottom:20px;}
+		
+		.fr200 {width:100%; max-width:200px; float:right; margin-left:20px; 
+			margin-bottom:20px;}
+		
+		.fl200 {width:100%; max-width:200px; float:left; margin-right:20px; 
+			margin-bottom:20px;}
+		
+
+
             /* TYPOGRAPHY */
             html {font-family:sans-serif;}
             h1 {font-size:42px;}
@@ -81,9 +100,9 @@
             </header>
  
 
-        <section id="overview">
+        <section id="overview" class="clearfix">
 
-            <figure>
+            <figure class="fr300">
                 <img src="images/Touched_by_His_Noodly_Appendage_HD.jpg" alt="Oil painting in the style of 'The Creation of Adam' by Michelangelo (which shows Adam reclining and reaching out to touch God), but instead of God there is the Flying Spaghetti Monster; two large meatballs wrapped in noodles, with eyes on stalks which are also noodles, all floating in mid-air.">
                 <figcaption>Oil painting in the style of "The Creation of Adam" by Michelangelo (which shows Adam reclining and reaching out to touch God), but instead of God there is the Flying Spaghetti Monster; two large meatballs wrapped in noodles, with eyes on stalks which are also noodles, all floating in mid-air.
                 Touched by His Noodly Appendage, a parody of Michelangelo's The Creation of Adam, is an iconic image of the Flying Spaghetti Monster[1] by Arne Niklas Jansson.[2]
@@ -109,7 +128,7 @@
         </ul>
         </section><!-- end OVERVIEW -->
 
-        <section id="history">
+        <section id="history" class="clearfix">
 
             <h2>History</h2>
             <p><a href="#top">Top</a></p>
@@ -137,7 +156,7 @@
             <p>In November 2005, the Kansas State Board of Education voted to allow criticisms of evolution, including language about intelligent design, as part of testing standards.[36] On February 13, 2007, the board voted 6–4 to reject the amended science standards enacted in 2005. This was the fifth time in eight years that the board had rewritten the standards on evolution.[37]</p>
         </section><!-- end HISTORY -->
 
-        <section id="tenets">
+        <section id="tenets" class="clearfix">
             <h2>Tenets</h2>
             <p><a href="#top">Top</a></p>
 
@@ -153,7 +172,7 @@
             <p>The Pastafarian conception of Heaven includes a beer volcano and a stripper (or sometimes prostitute or paint stripper) factory.[39][41] The Pastafarian Hell is similar, except that the beer is stale and the strippers have sexually transmitted diseases.[42]</p>
 
             <h3>Pirates and global warming</h3>
-            <figure>
+            <figure class="fr300">
                 <img src="images/440px-PiratesVsTemp(en).svg.png" alt="chart showing that in 1820 there were 25,000 pirates and the global average temperature was 14.2 degrees C, while in 2000 there were 17 pirates and the global average temperature was 15.9 degrees C.">
                 <figcaption>A misleading graph that is claimed to correlate the number of pirates with global temperature</figcaption>
             </figure>
@@ -164,7 +183,7 @@
 
             <h3>Holidays</h3>
 
-            <figure>
+            <figure class="fr300">
                 <img src="images/Flying_Spaghetti_Monster_Tree_Topper.jpg" alt="An alternative tree-topper for Pastafarians, handmade from pipe cleaners and pom poms">
                 <figcaption>An alternative tree-topper for Pastafarians, handmade from pipe cleaners and pom poms</figcaption>
             </figure>
