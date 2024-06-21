@@ -54,14 +54,16 @@
             /* TYPOGRAPHY */
             #form p {margin-bottom:3px;}
             #radio {margin-bottom:20px;}
+            input[type=radio] {vertical-align:baseline;} 
+            label {vertical-align:text-bottom;}
             
             /* FORM BUTTONS */
-            button, input[type=reset] {width:100px; border-radius:6px;}
-            button {margin-top:20px; background-color:red; color:white; font-weight:bold;border:0;}
+            button {width:100px; border-radius:6px;}
+            button, button:visited {margin-top:20px; background-color:red; color:white; font-weight:bold;border:0;}
             button:hover, button:focus, button:active {background-color:aqua; color:black;}
             
-            input[type=reset] {background-color:darkkhaki; font-weight:bold; border:0;}
-            input[type=reset]:hover, input[type=reset]:focus, input[type=reset]:active {background-color:#999; color:white;}
+            button[type=reset], button[type=reset]:visited {background-color:darkkhaki; font-weight:bold; border:0;}
+            button[type=reset]:hover, button[type=reset]:focus, button[type=reset]:active {background-color:#999; color:white;}
             
             
         </style>
@@ -111,7 +113,7 @@
                         <td>Shepard</td>
                         <td>3.96</td>
                     </tr>
-                        
+
                 </tbody>
                 <tfoot>
                     <tr>
@@ -119,9 +121,9 @@
                     </tr>
                 </tfoot>
             </table>
-            
+
         </section>
-        
+
         <section id="form">
             <h2>Form</h2>
             <h3>Contact Us:</h3>
@@ -129,9 +131,10 @@
                 <!-- NAME -->
                 <input type="text" name="firstname" required autofocus placeholder="First Name*">
                 <input type="text" name="lastname" required placeholder="Last Name*">
+
                 <!-- EMAIL -->
                 <input type="email" name="email" required placeholder="Email*">
-                
+
                 <div id="radio">
                 <!-- RADIO BUTTONS -->
                 <p>Favorite web language:</p>
@@ -141,8 +144,8 @@
                 <label for="css">CSS</label><br>
                 <input type="radio" id="javascript" name="language" value="javascript">
                 <label for="javascript">javascript</label><br>
-                </div><!-- end RADIO -->    
-                    
+                </div><!-- end RADIO -->
+
                 <!-- reason for email -->
                 <select name="reason">
                     <option value="instruction">I'm looking for instruction</option>
@@ -150,11 +153,13 @@
                     <option value="other">Other reason</option>
                     <option value="web">There's an error on your website</option>
                 </select>
+
                 <!-- COMMENT -->
                 <textarea name="comment" cols="45" rows="4" placeholder="Comments"></textarea>
+
                 <!-- BUTTONS -->
-                <button type="send" value="Send">Send</button>
-                <input type="reset" value="Reset">         
+                <button type="submit" value="Submit">Submit</button>
+                <button type="reset" value="Reset">Reset</button>
             </form>
         </section>
     </div> <!-- close WRAP -->
