@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><!-- This sets up the file for mobile use -->
+<meta name="description" content="Practice using floats">
+<title>Floats</title>
+<link rel="stylesheet" href="css/normalize.css">
+
+    <style>
+    /* BOX SIZING -- ignores border and padding when measuring width */
+      html {
+      box-sizing: border-box;
+      }
+      *, *:before, *:after {
+      box-sizing: inherit;
+      }
+
+      /* CLEARFIX HACK for fixing float containers */
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+        
+        /* STRUCTURE */
+        main {margin-top:200px;}
+        section {
+            width:606px;
+            border:3px solid green;
+            margin:0 auto;
+
+        }
+        .yesfloat div {
+            width:200px;
+            padding:30px;
+            background-color:blue;
+            float:left;
+        }
+        .yesfloat div:nth-child(odd) {
+            background-color:red;
+        }
+        
+        .inlineblock div {
+            display:inline-block;
+            width: 200px;
+            padding:30px; 
+            background-color:blue;
+        }
+        .inlineblock div:nth-child(odd) {
+            background-color:red;
+            margin:0 -4px;
+        }
+
+        .inlineblock div:nth-child(1) {
+            margin-left:0;
+        }
+        /* TYPOGRAPHY */
+        
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="yesfloat clearfix">
+            <div>
+                <p>DIV 1</p>
+            </div>
+            <div>
+                <p>DIV 2</p>
+            </div>
+            <div>
+                <p>DIV 3</p>
+            </div>
+        </section>
+        <section class="yesfloat clearfix">
+            <div>
+                <p>DIV 1</p>
+            </div>
+            <div style="width:400px;">
+                <p>Here is a lot more text that describes the content.</p>
+            </div>
+        </section>
+        <section class="inlineblock">
+            <div>
+                <p>DIV 1</p>
+            </div>
+            <div>
+                <p>DIV 2</p>
+            </div>
+            <div>
+                <p>DIV 3</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

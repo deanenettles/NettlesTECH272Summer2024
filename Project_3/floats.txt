@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Floats</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!-- This sets up the file for mobile use -->
+        <meta name="description" content="Practice using floats">
+        <link rel="stylesheet" href="css/normalize.css">
+        <style>
+        
+        /* This is where CSS goes */
+             {outline:1px solid red;}
+
+            /* BOX SIZING -- ignores border and padding when measuring width */
+            html {
+            box-sizing: border-box;
+            }
+            *, *:before, *:after {
+            box-sizing: inherit;
+            }
+
+            /* CLEARFIX HACK for floats: apply to container */
+
+            .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+
+            /* STRUCTURE */
+            section {
+                border:3px solid green; 
+                padding:0;
+                width: 606px;
+                margin:0 auto 150px auto;}
+            section div {
+                width:200px; 
+                height:100px; 
+                background-color:blue; 
+                padding:10px;
+            }
+
+            section div:nth-child(odd) {
+                background-color:red;
+                }
+
+            .two div {float:left;}
+            .two {clear:both;}
+            
+            .three div {display:inline-block; margin: -2px; text-align:center;}
+            .three div:nth-child(1) {margin-left:0px;}
+
+            /* TYPOGRAPHY */
+            p {
+                color:white; 
+                margin:0; 
+                padding:0; 
+                text-align:center;
+            }
+
+        </style>
+        </head>
+
+        <body>
+            <main>
+                <section class="one">
+                    <div>
+                        <p>DIV 1</p>
+                    </div>
+                    <div>
+                        <p>DIV 1</p>
+                    </div>
+                    <div>
+                        <p>DIV 1</p>
+                    </div>
+                </section>
+
+                <section class="two">
+                    <div>
+                        <p>DIV 1</p>
+                    </div>
+                    <div>
+                        <p>DIV 1</p>
+                    </div>
+                    <div>
+                        <p>DIV 1</p>
+                    </div>
+                </section>
+
+                <section class="three">
+                    <div>
+                        <p>DIV 1</p>
+                    </div>
+                    <div>
+                        <p>DIV 1</p>
+                    </div>
+                    <div>
+                        <p>DIV 1</p>
+                    </div>
+
+                    
+                </section>
+                       </main>
+
+        </body>
+</html>
