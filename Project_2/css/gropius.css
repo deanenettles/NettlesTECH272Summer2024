@@ -23,10 +23,24 @@
                 background-color:#ddd;
                 margin:0 auto;}
                 header, footer {background-color:#444; color:white;}
-                header, section, footer {padding:20px 60px;}
+
+
+                header, section, footer {padding:10px 30px;}
+
+                @media screen and (min-width:480px) {
+                    header, section, footer {padding:20px 60px;}
+                    }
 
             /* FLOATS */
-            .fr300 {width:100%; max-width:300px; float:right; margin-left:30px;}
+            .fr300 {width:100%; float:left; margin:0;}
+
+            @media screen and (min-width:480px) {
+            .fr300 {width:100%; max-width:200px; float:right; margin-left:30px;}
+            }
+    
+            @media (min-width: 640px) {
+                .fr300 {width:100%; max-width:300px; float:right; margin-left:30px;}
+            }
 
             /* IMAGES */
             figure {margin:0;}
