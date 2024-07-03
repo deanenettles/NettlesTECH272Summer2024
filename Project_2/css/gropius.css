@@ -82,9 +82,10 @@
                 nav a:active {color:white; background-color:#777;}     
                            
             /* FORM */
-                input, select, textarea, button {display:block; margin-bottom:6px; padding:3px;}
+                input, select, textarea, button {display:block; margin-bottom:6px; padding:3px; border:0;}
                 input[type=text], input[type=email],select, textarea {width:100%; max-width:400px;}
                 input[type=radio] {display:inline;}
+                input[type=radio] {border:0pt solid black;}
             
             /* TYPOGRAPHY */
                 #form p {margin-bottom:3px;}
