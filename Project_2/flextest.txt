@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flextest</title>
+    <style>
+        html{box-sizing:border-box;}
+        *, *:before, *:after {box-sizing:inherit;}
+        body {margin:0; padding:0; }
+        main {display:flex; flex-direction:row; justify-content:center; align-content:center;flex-wrap:wrap;  border:8px solid black;}
+        section {width:33.33%; height:200px; background-color:red; padding:20px; border:8px solid black; color:white;}
+        section:nth-child(odd) {background-color:green;}
+        h1 {text-align:center;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Flex</h1>
+    </header>
+    <main>
+        <section><p>Here's a bunch of text to prove it works</p></section>
+        <section><p>Here's a bunch of text to prove it works</p></section>
+        <section><p>Here's a bunch of text to prove it works</p></section>
+    </main>
+</body>
+</html>
